@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    text-rendering: optimizeLegibility;
+    font-size: 1em;
+}
+
+#component {
+    min-height: 100vh;
+}
+
+div.control-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #080705;
+    color: white;
+
+    p {
+        font-size: 1.1em;
+    }
+
+    button {
+        border: none;
+        padding: 10px;
+        background-color: #ffffdc;
+        border-radius: 5px;
+    }
+}
+
+div.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    height: 35vh;
+    background: rgba(0, 0, 0, 0.74) url('http://dannermm.s3.us-east-1.amazonaws.com/photo8.jpg');
+    background-position-y: center;
+    background-blend-mode: darken;
+
+    h1 {
+        font-size: 3em;
+        color: white;
+    }
+}
+
+div.items {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    height: 100%;
+}
+
+div.element {
+    text-align: center;
+    padding: 10px;
+    color: white;
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    h5 {
+        font-weight: normal;
+    }
+
+    img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 5px solid #FFFFFA;
+    }
+}

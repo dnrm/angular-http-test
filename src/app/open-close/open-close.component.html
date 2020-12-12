@@ -1,0 +1,17 @@
+<div id="component">
+    <div class="control-panel">
+        <p>Control Panel</p>
+        <button (click)="getData('https://faunadb.herokuapp.com/get-users')">Get Data</button>
+    </div>
+    <div class="hero">
+        <h1>Users</h1>
+    </div>
+    <div class="items">
+        <div *ngFor="let item of this.data" class="element">
+            <img [src]="item.data.img" alt="Profile picture">
+            <h3>{{item.data.name}}</h3>
+            <h5>{{item.data.lastname}}</h5>
+            <p>{{item.data.birthDate}}</p>
+        </div>
+    </div>
+</div>
